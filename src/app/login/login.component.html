@@ -1,0 +1,45 @@
+<div class="bg-stone-200 min-h-screen flex items-center justify-center">
+  <section class="bg-white min-h-screen lg:min-h-min w-screen lg:max-w-screen-lg lg:rounded-3xl lg:mx-8 py-12">
+    <h1 class="text-4xl font-bold text-gray-500 hidden lg:block mx-10">Sign in</h1>
+    <div class="grid lg:grid-cols-2 justify-stretch mx-10 pb-8">
+      <div class="flex flex-col items-center justify-around lg:order-2">
+        <img src="assets/images/logo.svg" alt="logo" class="max-w-[175px] sm:max-w-xs">
+        <p class="mt-12 font-medium">
+          Don't have an account?
+          <a routerLink="/signup" class="link">Click here</a>
+        </p>
+      </div>
+      <div class="mt-4 lg:pr-12 lg:border-r border-gray-300 text-center lg:text-left">
+        <div class="lg:hidden text-xl font-medium mt-12 sm:text-4xl sm:font-semibold">Sign in</div>
+        <p class="font-light text-gray-400 mt-2 sm:mt-3">Welcome back!</p>
+        <form name="login" class="text-left justify-self-stretch mt-6 space-y-4 max-w-sm mx-auto lg:max-w-full">
+          <div class="form-input-holder success">
+            <label>Your Email</label>
+            <input type="email" name="email" class="form-input" placeholder="Enter you Email">
+          </div>
+          <div class="form-input-holder error">
+            <label>Password</label>
+            <input type="email" name="email" class="form-input" placeholder="Enter you Password">
+          </div>
+          <div class="flex justify-between font-medium pt-2">
+            <label for="rememberMe" class="hover:cursor-pointer">
+              <input type="checkbox" name="remember_me" id="rememberMe">
+              Remember me
+            </label>
+            <a routerLink="/forgot-password" class="link">Forgot password?</a>
+          </div>
+          <div class="pt-8 flex flex-col items-center space-y-6">
+            <button type="submit" class="btn blue sm:w-full">Sign in</button>
+            <p class="text-gray-400 text-sm text-center sm:strikethrough">
+              <span>or continue with</span>
+            </p>
+            <a href="http://google.com" class="btn white font-medium text-sm">
+              <img class="w-6 h-6 mr-3" src="assets/icons/google.svg" alt="google icon">
+              Sign in with Gmail
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
