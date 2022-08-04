@@ -15,7 +15,7 @@
   }
 
   .link:hover {
-    @apply brightness-75;
+    @apply text-thermoBlue-800;
   }
 }
 
@@ -54,6 +54,18 @@
     background-image: url("data:image/svg+xml,%3Csvg class='w-6 h-6' fill='none' stroke='rgb(220 38 38)' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12'%3E%3C/path%3E%3C/svg%3E");
   }
 
+  .select-box {
+    position: relative;
+  }
+
+  .select-box button {
+    @apply text-sm flex justify-between items-center py-2 px-4 border border-gray-100 rounded-xl;
+  }
+
+  .select-box .dd {
+    @apply absolute top-full right-0 mt-2 bg-white py-1 px-3 rounded-xl border border-gray-100 text-sm leading-snug;
+  }
+
   /**
     * BUTTONS
     */
@@ -83,6 +95,30 @@
     @apply bg-gray-100;
   }
 
+  .switch {
+    @apply relative bg-gray-400 rounded-full z-50;
+  }
+  .switch .bar {
+    @apply rounded-full bg-gray-300/50 absolute z-0;
+    width: 175%;
+    height: 80%;
+    top: 10%;
+  }
+  .switch.on::after {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-full rounded-full bg-inherit z-50;
+  }
+  .switch.on .bar {
+    @apply right-0;
+  }
+  .switch.off .bar {
+    @apply left-0;
+  }
+
+  /**
+   * END BUTTONS
+   */
+
   .strikethrough {
     @apply relative w-full;
   }
@@ -92,5 +128,134 @@
   }
   .strikethrough span {
     @apply bg-white relative px-4
+  }
+
+  .header {
+    @apply flex items-center justify-between pt-4 pb-2 px-3 relative bg-white drop-shadow-xl z-50
+          2xl:drop-shadow-none 2xl:px-12 2xl:pt-12;
+  }
+
+  .sidebar {
+    @apply absolute top-full left-0 px-8 bg-white z-50
+            2xl:sticky 2xl:bg-gray-75 2xl:flex 2xl:flex-col 2xl:h-screen 2xl:top-0;
+  }
+
+  .sidebar .section {
+    @apply py-6 space-y-6;
+  }
+
+  .sidebar .separator {
+    @apply bg-slate-200 h-[2px] my-4;
+  }
+
+  .sidebar .menu-item {
+    @apply flex items-center text-sm space-x-4 whitespace-nowrap hover:text-gray-700;
+  }
+  .sidebar .menu-item svg {
+    @apply w-6 h-6 shrink-0;
+  }
+  .sidebar .menu-item svg.small {
+    @apply w-4 h-4;
+  }
+
+  .sidebar .copy {
+    @apply text-xs;
+  }
+
+  .header-item {
+    @apply flex flex-col md:flex-row items-center justify-center text-[10px] space-y-1 hover:text-gray-700;
+  }
+  .header-item svg {
+    @apply w-5 h-5 2xl:w-7 2xl:h-7;
+  }
+  .header-item span {
+    @apply md:hidden;
+  }
+  .header-item span.large {
+    @apply hidden 2xl:inline-block text-base ml-4;
+  }
+
+  .header .user-menu {
+    @apply absolute right-0 top-full bg-white py-3 px-5 z-50 2xl:mx-12 2xl:drop-shadow-2xl
+  }
+
+  .page-title {
+    @apply flex items-center text-lg 2xl:text-2xl;
+  }
+
+  .page-title svg {
+    @apply w-8 h-8 mr-4;
+  }
+
+  .page-title .dashed {
+    @apply block relative pl-12;
+  }
+
+  .page-title .dashed::before {
+    content: "";
+    @apply absolute left-0 top-1/2 h-[1px] w-8 bg-slate-400;
+  }
+
+  .content {
+    @apply px-4 py-6 2xl:px-12 2xl:py-12;
+  }
+
+  .widget {
+    @apply border-2 border-stone-100 rounded-5xl py-10 px-6 sm:px-10;
+  }
+
+  .widget.filled {
+    @apply bg-stone-100;
+  }
+
+  .widget .title {
+    @apply text-base 2xl:text-xl;
+  }
+
+  .metric-card {
+    @apply rounded-xl py-4 px-10 bg-stone-100 relative;
+  }
+
+  .metric-card .title {
+    @apply text-lg;
+  }
+
+  .metric-card .options {
+    @apply absolute top-2 right-2 z-50;
+  }
+
+  .metric {
+    @apply relative;
+  }
+
+  .metric.up, .metric.down {
+    @apply pl-5;
+  }
+
+  .metric.up::before,
+  .metric.down::before {
+    content: "";
+    @apply w-0 h-0 bottom-1.5 left-0 absolute;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+  }
+
+  .metric.up::before {
+    border-bottom: 7px solid #2dd348;
+  }
+  .metric.down::before {
+    border-top: 7px solid #f0424c;
+  }
+
+  .calendar {
+    @apply grid grid-cols-7 gap-3;
+  }
+
+  .calendar > div {
+    @apply flex items-center justify-center h-8;
+  }
+
+  .calendar .selected {
+    @apply w-8 bg-red-600 text-white rounded-full mx-auto;
   }
 }

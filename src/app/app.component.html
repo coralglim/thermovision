@@ -1,6 +1,6 @@
 
-<nav class="p-3">
-  <button (click)="menuOpen = ! menuOpen" class="flex items center">
+<nav class="p-3 border-b hidden">
+  <button (click)="menuOpen = ! menuOpen" class="flex items-center">
     <div class="border border-gray-700 mr-2 flex w-6 h-6 items-center justify-center">
       <svg *ngIf=" ! menuOpen" class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
       <svg *ngIf="menuOpen" class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path></svg>
@@ -10,6 +10,8 @@
   <ul *ngIf="menuOpen" class="my-3 ml-8 text-gray-600">
     <li>&raquo; <a routerLink="/login">Login form</a></li>
     <li>&raquo; <a routerLink="/signup">Signup form</a></li>
+    <li>&raquo; <a routerLink="/forgot-password">Forgot Password</a></li>
+    <li>&raquo; <a routerLink="/dashboard">Dashboard</a></li>
   </ul>
 </nav>
 
