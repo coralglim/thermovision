@@ -22,8 +22,4 @@ export class DashboardComponent implements OnInit {
   notification_e: boolean = true;
   notification_w: boolean = true;
 
-  infoOpen: boolean = false;
-
-  modelFrontVisible: boolean = true;
-
 }

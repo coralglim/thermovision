@@ -15,11 +15,16 @@
         <form name="login" class="text-left justify-self-stretch mt-6 space-y-4 max-w-sm mx-auto lg:max-w-full">
           <div class="form-input-holder success">
             <label>Your Email</label>
-            <input type="email" name="email" class="form-input" placeholder="Enter you Email">
+            <div class="form-input">
+              <input type="email" name="email" placeholder="Enter you Email">
+            </div>
           </div>
           <div class="form-input-holder error">
             <label>Password</label>
-            <input type="email" name="email" class="form-input" placeholder="Enter you Password">
+            <div class="form-input">
+              <input type="email" name="email" placeholder="Enter you Password">
+            </div>
+            <div class="form-input-error">The password you provided is invalid</div>
           </div>
           <div class="flex justify-between font-medium pt-2">
             <label for="rememberMe" class="hover:cursor-pointer">

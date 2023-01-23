@@ -11,9 +11,12 @@ module.exports = {
       },
       colors: {
         thermoBlue: {
-          500: '#00C6F0',
+          500: '#4B6EB5',
           600: '#00b7e0',
           800: '#006c83'
+        },
+        thermoTeal: {
+          500: '#09C2EB'
         },
         thermoPurple: {
           500: '#8676ff',
