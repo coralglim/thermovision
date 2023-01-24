@@ -1,0 +1,227 @@
+{
+  "iconImageFiles": [
+    {
+      "iconName": "logo-icon",
+      "iconPath": "/assets/images/logo-icon.svg"
+    },
+    {
+      "iconName": "logo-text",
+      "iconPath": "/assets/images/logo-text.svg"
+    },
+    {
+      "iconName": "logo-unicolor",
+      "iconPath": "/assets/images/logo-unicolor.svg"
+    },
+    {
+      "iconName": "logo",
+      "iconPath": "/assets/images/logo.svg"
+    },
+    {
+      "iconName": "notification-new",
+      "iconPath": "/assets/icons/notification-new.svg"
+    },
+    {
+      "iconName": "payment-plans",
+      "iconPath": "/assets/icons/payment-plans.svg"
+    },
+    {
+      "iconName": "pinch-zoom",
+      "iconPath": "/assets/icons/pinch-zoom.svg"
+    },
+    {
+      "iconName": "search",
+      "iconPath": "/assets/icons/search.svg"
+    },
+    {
+      "iconName": "settings-check",
+      "iconPath": "/assets/icons/settings-check.svg"
+    },
+    {
+      "iconName": "stats",
+      "iconPath": "/assets/icons/stats.svg"
+    },
+    {
+      "iconName": "subscriptions",
+      "iconPath": "/assets/icons/subscriptions.svg"
+    },
+    {
+      "iconName": "subscriptions2",
+      "iconPath": "/assets/icons/subscriptions2.svg"
+    },
+    {
+      "iconName": "sun-line",
+      "iconPath": "/assets/icons/sun-line.svg"
+    },
+    {
+      "iconName": "switch-on",
+      "iconPath": "/assets/icons/switch-on.svg"
+    },
+    {
+      "iconName": "tap",
+      "iconPath": "/assets/icons/tap.svg"
+    },
+    {
+      "iconName": "user",
+      "iconPath": "/assets/icons/user.svg"
+    },
+    {
+      "iconName": "user-fill",
+      "iconPath": "/assets/icons/user-fill.svg"
+    },
+    {
+      "iconName": "user-fill-2",
+      "iconPath": "/assets/icons/user-fill-2.svg"
+    },
+    {
+      "iconName": "view-dashboard",
+      "iconPath": "/assets/icons/view-dashboard.svg"
+    },
+    {
+      "iconName": "plus",
+      "iconPath": "/assets/icons/plus.svg"
+    },
+    {
+      "iconName": "plus-new",
+      "iconPath": "/assets/icons/plus-circle.svg"
+    },
+    {
+      "iconName": "actions-menu",
+      "iconPath": "/assets/icons/actions-menu.svg"
+    },
+    {
+      "iconName": "body",
+      "iconPath": "/assets/icons/body.svg"
+    },
+    {
+      "iconName": "body-frame",
+      "iconPath": "/assets/icons/body-frame.svg"
+    },
+    {
+      "iconName": "burger-menu",
+      "iconPath": "/assets/icons/burger-menu.svg"
+    },
+    {
+      "iconName": "camera",
+      "iconPath": "/assets/icons/camera.svg"
+    },
+    {
+      "iconName": "cog",
+      "iconPath": "/assets/icons/cog.svg"
+    },
+    {
+      "iconName": "customers",
+      "iconPath": "/assets/icons/customers.svg"
+    },
+    {
+      "iconName": "dashboard",
+      "iconPath": "/assets/icons/dashboard.svg"
+    },
+    {
+      "iconName": "devices",
+      "iconPath": "/assets/icons/devices.svg"
+    },
+    {
+      "iconName": "file-history",
+      "iconPath": "/assets/icons/file-history.svg"
+    },
+    {
+      "iconName": "folder",
+      "iconPath": "/assets/icons/folder.svg"
+    },
+    {
+      "iconName": "gmail-logo",
+      "iconPath": "/assets/icons/gmail-logo.svg"
+    },
+    {
+      "iconName": "google",
+      "iconPath": "/assets/icons/google.svg"
+    },
+    {
+      "iconName": "help",
+      "iconPath": "/assets/icons/help.svg"
+    },
+    {
+      "iconName": "help-2",
+      "iconPath": "/assets/icons/help-2.svg"
+    },
+    {
+      "iconName": "info",
+      "iconPath": "/assets/icons/info.svg"
+    },
+    {
+      "iconName": "info-2",
+      "iconPath": "/assets/icons/info-2.svg"
+    },
+    {
+      "iconName": "list",
+      "iconPath": "/assets/icons/list.svg"
+    },
+    {
+      "iconName": "log-out",
+      "iconPath": "/assets/icons/log-out.svg"
+    },
+    {
+      "iconName": "notification-bell",
+      "iconPath": "/assets/icons/notification-bell.svg"
+    },
+    {
+      "iconName": "chevron-down",
+      "iconPath": "/assets/icons/chevron-down.svg"
+    },
+    {
+      "iconName": "thermographies",
+      "iconPath": "/assets/icons/thermographies.svg"
+    },
+    {
+      "iconName": "check",
+      "iconPath": "/assets/icons/check.svg"
+    },
+    {
+      "iconName": "close",
+      "iconPath": "/assets/icons/close.svg"
+    },
+    {
+      "iconName": "error",
+      "iconPath": "/assets/icons/error.svg"
+    },
+    {
+      "iconName": "warning",
+      "iconPath": "/assets/icons/warning.svg"
+    },
+    {
+      "iconName": "check-square",
+      "iconPath": "/assets/icons/check-square.svg"
+    },
+    {
+      "iconName": "refresh",
+      "iconPath": "/assets/icons/refresh.svg"
+    },
+    {
+      "iconName": "body-full",
+      "iconPath": "/assets/icons/body-full.svg"
+    },
+    {
+      "iconName": "body-foot",
+      "iconPath": "/assets/icons/body-foot.svg"
+    },
+    {
+      "iconName": "body-hand",
+      "iconPath": "/assets/icons/body-hand.svg"
+    },
+    {
+      "iconName": "body-head",
+      "iconPath": "/assets/icons/body-head.svg"
+    },
+    {
+      "iconName": "dermatology",
+      "iconPath": "/assets/icons/dermatology.svg"
+    },
+    {
+      "iconName": "my-thermovision",
+      "iconPath": "/assets/images/my-thermovision.svg"
+    }
+  ],
+  "customIcons": [
+
+  ]
+}

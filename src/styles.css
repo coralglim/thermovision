@@ -82,7 +82,7 @@
     */
 
   .btn {
-    @apply rounded-full text-white text-center py-4 px-8 drop-shadow-btn flex items-center justify-center;
+    @apply rounded-full text-white text-center py-3 px-6 drop-shadow-btn flex items-center justify-center;
     text-shadow: 0 1px 2px #777;
     min-width: 200px;
   }
@@ -143,16 +143,16 @@
 
   .header {
     @apply flex items-center justify-between pt-4 pb-2 px-3 relative bg-white drop-shadow-xl z-50
-          2xl:drop-shadow-none 2xl:px-12 2xl:pt-12;
+          xl:drop-shadow-none xl:px-12 xl:pt-12;
   }
 
   .sidebar {
     @apply absolute top-full left-0 px-8 bg-white z-50
-            2xl:sticky 2xl:bg-gray-75 2xl:flex 2xl:flex-col 2xl:h-screen 2xl:top-0;
+            xl:sticky xl:bg-gray-75 xl:flex xl:flex-col xl:h-screen xl:top-0;
   }
 
   .sidebar .section {
-    @apply py-6 space-y-6;
+    @apply py-6;
   }
 
   .sidebar .separator {
@@ -160,13 +160,31 @@
   }
 
   .sidebar .menu-item {
-    @apply flex items-center text-sm space-x-4 whitespace-nowrap hover:text-gray-700;
+    @apply flex space-x-4 whitespace-nowrap hover:text-gray-700;
+  }
+  .sidebar .menu-item + .menu-item {
+    @apply mt-8;
+  }
+
+  .sidebar .menu-item .icon {
+    @apply w-6 flex justify-center;
   }
   .sidebar .menu-item svg {
-    @apply w-6 h-6 shrink-0;
+    @apply w-full;
   }
   .sidebar .menu-item svg.small {
-    @apply w-4 h-4;
+    @apply w-5;
+  }
+
+  .sidebar .menu-item .text {
+    @apply flex-grow;
+  }
+  .sidebar .menu-item .mi-info {
+    @apply text-sm ml-10 relative;
+  }
+  .sidebar .menu-item .mi-info::before {
+    content: "";
+    @apply absolute top-1/2 -left-10 border border-gray-300 w-8;
   }
 
   .sidebar .copy {
@@ -187,7 +205,7 @@
   }
 
   .header .user-menu {
-    @apply absolute right-0 top-full bg-white py-3 px-5 z-50 2xl:mx-12 2xl:drop-shadow-2xl space-y-3
+    @apply absolute right-0 top-full bg-white py-3 px-5 z-50 xl:mx-12 xl:drop-shadow-2xl space-y-3
   }
 
   .header .user-menu a {
@@ -198,7 +216,7 @@
   }
 
   .page-title {
-    @apply flex items-center text-lg 2xl:text-2xl;
+    @apply flex items-center text-lg xl:text-2xl;
   }
 
   .page-title svg {
@@ -215,7 +233,7 @@
   }
 
   .content {
-    @apply px-4 py-6 2xl:px-12 2xl:py-12;
+    @apply px-4 py-6 xl:px-12 xl:py-12;
   }
 
   .widget {
@@ -227,7 +245,7 @@
   }
 
   .widget .title {
-    @apply text-base 2xl:text-xl;
+    @apply text-base xl:text-xl;
   }
 
   .metric-card {
@@ -276,18 +294,21 @@
   .calendar .selected {
     @apply w-8 bg-red-600 text-white rounded-full mx-auto;
   }
-}
 
-
-.info-menu {
-  @apply border border-gray-200 rounded-2xl bg-white px-4 flex flex-col;
-}
-.info-menu .im-item {
-  @apply py-4 flex items-center;
-}
-.info-menu .im-item + .im-item {
-  @apply border-t border-gray-200;
-}
-.info-menu a.im-item {
-  @apply underline;
+  .info-menu {
+    @apply border border-gray-200 rounded-2xl bg-white px-4 flex flex-col;
+  }
+  .info-menu .im-item {
+    @apply py-4 flex items-center;
+  }
+  .info-menu .im-item + .im-item {
+    @apply border-t border-gray-200;
+  }
+  .info-menu a.im-item {
+    @apply underline;
+  }
+  
+  .centered-menu {
+    @apply fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 sm:mx-auto min-w-[320px] flex-grow z-[99];
+  }
 }

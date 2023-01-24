@@ -18,6 +18,10 @@ export class DashboardComponent implements OnInit {
 
   scansOpen: boolean = false;
 
+  addSpotOpen: boolean = false;
+
+  bodyPartsOpen: boolean = false;
+
   notification_s: boolean = true;
   notification_e: boolean = true;
   notification_w: boolean = true;
